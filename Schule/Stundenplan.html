@@ -8,6 +8,50 @@
         #box1 {
             text-align: center;
         }
+
+        .divTable {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: table;
+            width: 100%;
+            overflow-x: scroll;
+            white-space: nowrap
+        }
+
+        .divTableRow {
+            display: table-row;
+            overflow-x: scroll;
+            white-space: nowrap
+        }
+
+        .divTableHeading {
+            background-color: #EEE;
+            display: table-header-group;
+        }
+
+        .divTableCell,
+        .divTableHead {
+
+            display: table-cell;
+            padding: 2%;
+        }
+
+        .divTableHeading {
+            background-color: #EEE;
+            display: table-header-group;
+            font-weight: bold;
+        }
+
+        .divTableFoot {
+            background-color: #EEE;
+            display: table-footer-group;
+            font-weight: bold;
+        }
+
+        .divTableBody {
+            display: table-row-group;
+        }
     </style>
 
     <title>Traditionelles Taekwon-Do Dresden Löbtau</title>
@@ -84,9 +128,11 @@
         <strong>An gesetzlichen Feiertagen findet kein Training statt!</strong>
     </div>
 
-    <div id="box1" style="margin: 2%" style="overflow-x:auto;">
+    <div id="box1" style="margin: 2%">
         <h2 style="color:indianred;">Ersatzstundenplan vom 20.07.2020 bis zum 28.08.2020</h2>
         <br>
+
+        <!-- used table, but div is better
         <table class="table table-hover" style="width: 70%" align="center">
             <colgroup>
                 <col style="width: 20%">
@@ -129,8 +175,55 @@
                     <td></td>
                 </tr>
             </tbody>
-
         </table>
+    -->
+
+    </div>
+
+    <div class="divTable" style="width: 70%;" >
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell"
+                    style="border-top: 1px solid #f5dab1; border-bottom: 1px solid #f5dab1; background-color: #fae9d0;">
+                    Montag</div>
+                <div class="divTableCell"
+                    style="border-top: 1px solid #f5dab1; border-bottom: 1px solid #f5dab1; background-color: #fae9d0;">
+                    Dienstag</div>
+                <div class="divTableCell"
+                    style="border-top: 1px solid #f5dab1; border-bottom: 1px solid #f5dab1; background-color: #fae9d0;">
+                    Mittwoch</div>
+                <div class="divTableCell"
+                    style="border-top: 1px solid #f5dab1; border-bottom: 1px solid #f5dab1; background-color: #fae9d0;">
+                    Donnerstag</div>
+                <div class="divTableCell"
+                    style="border-top: 1px solid #f5dab1; border-bottom: 1px solid #f5dab1; background-color: #fae9d0;">
+                    Freitag</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell" style="border-bottom: 1px solid #f9ead6;">&nbsp;</div>
+                <div class="divTableCell" style="border-bottom: 1px solid #f9ead6;">&nbsp;</div>
+                <div class="divTableCell" style="border-bottom: 1px solid #f9ead6;">&nbsp;</div>
+                <div class="divTableCell" style="border-bottom: 1px solid #f9ead6;">&nbsp;</div>
+                <div class="divTableCell" style="border-bottom: 1px solid #f9ead6;">16:00 - 17:00
+                    <br>Alle<sup>*</sup> <br>28.8. Lehrgang</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">16:45 - 17:45 <br>Kinder<sup>*</sup></div>
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">17:00 - 18:00 <br>Alle<sup>*</sup> <br>28.8. Lehrgang</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell" style="border-top: 1px solid #f9ead6;">18:00 - 19:00
+                    <br>Erwachsene<sup>*</sup></div>
+                <div class="divTableCell" style="border-top: 1px solid #f9ead6;">&nbsp;</div>
+                <div class="divTableCell" style="border-top: 1px solid #f9ead6;">&nbsp;</div>
+                <div class="divTableCell" style="border-top: 1px solid #f9ead6;">18:00 - 19:00 <br>ab 14
+                    Jahre<sup>*</sup></div>
+                <div class="divTableCell" style="border-top: 1px solid #f9ead6;">&nbsp;</div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
