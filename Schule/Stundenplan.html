@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
+        @media only screen and (max-width: 800px){
+            .divTableCell{
+                max-width: 80px;
+            }
+            #box2{
+                text-align: left;
+            }
+        }
         #box1 {
             text-align: center;
         }
@@ -21,14 +30,10 @@
             margin-right: auto;
             display: table;
             width: 100%;
-            overflow-x: scroll;
-            white-space: nowrap
         }
 
         .divTableRow {
             display: table-row;
-            overflow-x: scroll;
-            white-space: nowrap
         }
 
         .divTableHeading {
@@ -134,7 +139,7 @@
         <strong>An gesetzlichen Feiertagen findet kein Training statt!</strong>
     </div>
 
-    <div id="box1" style="margin: 2%">
+    <div id="box1">
         <h2 style="color:indianred;">Ersatzstundenplan vom 20.07.2020 bis zum 28.08.2020</h2>
         <br>
         <div class="divTable" style="width: 70%;">
@@ -190,9 +195,8 @@
         </div>
     </div>
 
-    <div id="box1" style="margin: 2%;">
+    <div id="box1">
         <h2 style="color:rgb(46, 37, 37);">Stundenplan</h2>
-
 
         <br>
         <div class="divTable" style="width: 70%;">
@@ -260,7 +264,7 @@
         </div>
         <h2 style="color:rgb(46, 37, 37);">Raumzeiten frei zur Untermiete:</h2>
         <br>
-        <div id="box2" style="text-align: left; margin-left: 35%;">
+        <div id="box2">
             Mo: 8 - 9 Uhr und 11 - 16:30 Uhr<br>
             Di: 8 - 16:30 Uhr<br>
             Mi: 8 - 15:30 Uhr<br>
@@ -271,6 +275,7 @@
         </div>
     </div>
 
+    <br><br><br><br>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
